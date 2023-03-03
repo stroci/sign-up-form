@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Tilt+Prism&display=swap" rel="stylesheet">
+    <script src="index.js" defer></script>
+    <title>Sign up form</title>
+</head>
+<body>
+    <div class="head">
+        
+        <h1><img src="images/dragon2.png" alt="">Holotropic</h1>
+    </div>
+    <div class="signup">
+        <div class="heading">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
+            <p>You know you want to.</p>
+        </div>
+        <div class="form">
+            <p class="form-title">Let's do this</p>
+            <form action="#" method="get" id="signup-form" novalidate>
+                
+                <div class="form-element">
+                    <label for="firstname">first name</label>
+                    <input id="firstname" type="text" name="firstname" placeholder="First name" minlength="1"/>
+                </div>
+                <div class="form-element">
+                    <label for="lastname">last name</label>
+                    <input id="lastname" type="text" name="lastname" placeholder="Last name" minlength="1"/>
+                </div>
+                <div class="form-element">
+                    <label for="email" class="required">email</label>
+                    <input id="email" type="email" name="email" required placeholder="Email address"/>
+                    <span id="hidden_email">Please enter valid email address!</span>
+                </div>
+                <div class="form-element">
+                    <label for="phone">phone number</label>
+                    <input id="phone" type="text" name="phone" placeholder="Phone number"/>
+                </div>
+                <div class="form-element">
+                    <label for="pass1" class="required">password</label>
+                    <input id="pass1" type="password" name="pass1" required minlength="8"/>
+                    <span id="hidden_pass1">Minimal password length: 8!</span>
+                </div>
+                <div class="form-element">
+                    <label for="pass2" class="required">confirm password</label>
+                    <input id="pass2" type="password" name="pass2" required minlength="8"/>
+                    <span id="hidden_pass2">Minimal password length: 8!</span>
+                </div>  
+            </form>
+        </div>
+        <div class="account">
+            <button type="submit" form="signup-form">Create account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </div>
+</body>
+</html>
