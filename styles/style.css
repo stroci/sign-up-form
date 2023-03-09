@@ -16,6 +16,8 @@ body {
     
 }
 
+/* Left side - image + logo */
+
 .head {
     background-image: url('../images/sun.jpg');
     background-size: cover;
@@ -34,6 +36,8 @@ h1 {
     font-size: 3rem;
 }
 
+/* Right side - text + form */
+
 form {
     display: flex;
     flex-wrap: wrap;
@@ -45,6 +49,12 @@ form {
 .form {
     background-color: var(--lighter-green);
     box-shadow: 5px 5px 5px  var(--darker-green);
+}
+
+
+label:focus {
+    box-shadow: 0px 0px 2px 2px yellow;
+    content: "dafae";
 }
 
 label, .form-element > span.visible  {
@@ -76,10 +86,6 @@ input:focus-visible {
     background-color: var(--lighter-green);
 }
 
-label:focus {
-    box-shadow: 0px 0px 2px 2px yellow;
-    content: "dafae";
-}
 
 .signup {
     background-color: var(--darker-green);
